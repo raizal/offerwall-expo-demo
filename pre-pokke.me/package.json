@@ -2,19 +2,19 @@
   "name": "pre-pokke.me",
   "version": "1.0.0",
   "scripts": {
-    "android": "expo run:android",
-    "ios": "expo run:ios",
     "start": "expo start",
-    "prebuild": "expo prebuild",
+    "build:dev": "npx eas-cli build --profile development --local",
+    "build:preview": "npx eas-cli build --profile preview --local",
     "lint": "eslint \"**/*.{js,jsx,ts,tsx}\" && prettier -c \"**/*.{js,jsx,ts,tsx,json}\"",
-    "format": "eslint \"**/*.{js,jsx,ts,tsx}\" --fix && prettier \"**/*.{js,jsx,ts,tsx,json}\" --write",
-    "web": "expo start --web"
+    "format": "eslint \"**/*.{js,jsx,ts,tsx}\" --fix && prettier \"**/*.{js,jsx,ts,tsx,json}\" --write"
   },
   "dependencies": {
     "@expo/vector-icons": "^14.0.0",
     "@react-navigation/native": "^7.0.3",
     "@react-navigation/stack": "^7.0.4",
     "expo": "53.0.9",
+    "expo-build-properties": "~0.14.6",
+    "expo-dev-client": "~5.1.8",
     "expo-status-bar": "~2.2.3",
     "expo-tracking-transparency": "~5.2.4",
     "nativewind": "latest",

@@ -17,6 +17,14 @@
         }
       ],
       [
+        "expo-build-properties",
+        {
+          "ios": {
+            "useFrameworks": "static"
+          }
+        }
+      ],
+      [
         "react-native-google-mobile-ads",
         {
           "androidAppId": "ca-app-pub-8379577629533591~4689220868",
@@ -75,7 +83,8 @@
           ]
         }
       ],
-      "expo-tracking-transparency"
+      "expo-tracking-transparency",
+      "expo-build-properties"
     ],
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -90,14 +99,20 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.anonymous.prepokke.me"
+      "bundleIdentifier": "com.anonymous.prepokke.me",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.anonymous.prepokke.me"
+      "package": "com.anonymous.prepokke.me",
+      "permissions": [
+        "com.google.android.gms.permission.AD_ID"
+      ]
     },
     "extra": {
       "eas": {
@@ -105,9 +120,5 @@
       }
     },
     "owner": "raizal"
-  },
-  "react-native-google-mobile-ads": {
-    "android_app_id": "ca-app-pub-8379577629533591~4689220868",
-    "ios_app_id": "ca-app-pub-8379577629533591~6084937282"
   }
 }
