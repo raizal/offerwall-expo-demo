@@ -1,0 +1,9 @@
+{
+  "platforms": ["apple", "android"],
+  "apple": {
+    "modules": ["OfferwallSdkModule"]
+  },
+  "android": {
+    "modules": ["me.pokke.offerwallsdk.OfferwallSdkModule"]
+  }
+}

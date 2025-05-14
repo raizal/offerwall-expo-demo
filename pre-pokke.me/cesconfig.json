@@ -1,0 +1,36 @@
+{
+  "cesVersion": "2.18.2",
+  "projectName": "pre-pokke.me",
+  "packages": [
+    {
+      "name": "react-navigation",
+      "type": "navigation",
+      "options": {
+        "type": "stack"
+      }
+    },
+    {
+      "name": "nativewind",
+      "type": "styling"
+    }
+  ],
+  "flags": {
+    "noGit": false,
+    "noInstall": false,
+    "overwrite": false,
+    "importAlias": true,
+    "packageManager": "pnpm",
+    "eas": false,
+    "publish": false
+  },
+  "packageManager": {
+    "type": "pnpm",
+    "version": "10.10.0"
+  },
+  "os": {
+    "type": "Linux",
+    "platform": "linux",
+    "arch": "x64",
+    "kernelVersion": "6.12.3-061203-generic"
+  }
+}
